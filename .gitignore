@@ -37,5 +37,3 @@ bower_components/
 *.swo
 
 # Public images except the folder itself
-public/images/*
-!.gitkeep
