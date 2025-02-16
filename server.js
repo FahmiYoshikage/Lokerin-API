@@ -13,10 +13,10 @@ const middlewares = jsonServer.defaults({
   static: './public'
 });
 
-// Environment variables that should be in .env file
-const SECRET_KEY = process.env.JWT_SECRET;
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+// Environment variables
+const SECRET_KEY = process.env.JWT_SECRET || "your_jwt_secret";
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "password";
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
 
@@ -79,7 +79,7 @@ const upload = multer({
 server.use(middlewares);
 server.use(express.json());
 
-// Login endpoint
+// Public routes (no authentication required)
 server.post("/api/login", (req, res) => {
   const { username, password } = req.body;
 
@@ -102,8 +102,11 @@ server.post("/api/login", (req, res) => {
   }
 });
 
-// Protected routes
-server.post('/api/subscribe', authenticateToken, async (req, res) => {
+// Protected API routes
+const apiRouter = express.Router();
+apiRouter.use(authenticateToken);
+
+apiRouter.post('/subscribe', async (req, res) => {
   try {
     const { email } = req.body;
     const subscribers = db.get('subscribers').value();
@@ -131,8 +134,7 @@ server.post('/api/subscribe', authenticateToken, async (req, res) => {
   }
 });
 
-// File upload endpoint
-server.post('/upload', authenticateToken, upload.single('file'), (req, res) => {
+apiRouter.post('/upload', upload.single('file'), (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ message: 'No file uploaded' });
@@ -145,6 +147,29 @@ server.post('/upload', authenticateToken, upload.single('file'), (req, res) => {
   } catch (error) {
     console.error('Upload error:', error);
     res.status(500).json({ message: 'Error uploading file' });
+  }
+});
+
+// Mount protected API routes
+server.use('/api', apiRouter);
+
+// Middleware to protect certain json-server routes
+server.use((req, res, next) => {
+  // List of routes that need authentication
+  const protectedRoutes = [
+    { path: '/jobs', methods: ['POST', 'PUT', 'DELETE'] },
+    { path: '/categories', methods: ['POST', 'PUT', 'DELETE'] }
+    // Add other routes that need protection
+  ];
+
+  const isProtected = protectedRoutes.some(route => 
+    req.path.startsWith(route.path) && route.methods.includes(req.method)
+  );
+
+  if (isProtected) {
+    authenticateToken(req, res, next);
+  } else {
+    next();
   }
 });
 
