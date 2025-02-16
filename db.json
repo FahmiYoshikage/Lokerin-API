@@ -1,22 +1,6 @@
 {
   "jobs": [
     {
-      "id": "2",
-      "title": "Backend Developer",
-      "company": "Startup XYZ",
-      "location": "Bandung",
-      "date_posted": "2024-02-02",
-      "category": "IT & Software",
-      "description": "Dibutuhkan Backend Developer dengan pengalaman dalam Node.js dan database SQL.",
-      "image": "/images/Telkom.png",
-      "requirements": [
-        "Menguasai Node.js dan Express.js",
-        "Berpengalaman dengan PostgreSQL atau MySQL",
-        "Familiar dengan konsep API dan autentikasi"
-      ],
-      "apply_link": "https://example.com/apply/backend-dev"
-    },
-    {
       "id": "9c0b",
       "title": "Store Crew",
       "company": "PT. INDOMARCO PRISMATAMA",
@@ -39,71 +23,26 @@
       "poster": "/images/lptks.jpg"
     },
     {
-      "id": "e946",
-      "title": "12",
+      "title": "12345",
       "company": "123",
       "location": "123",
-      "description": "iohioh",
-      "image": "/images/lptks.jpg",
-      "date_posted": "2025-01-30",
-      "applicationLink": "https://www.pens.ac.id/sarjanaterapan-teknik-telekomunikasi/",
-      "poster": "https://picsum.photos/536/354",
-      "uploadDate": "0313-03-12"
-    },
-    {
-      "title": "123123",
-      "company": "123",
-      "location": "123",
-      "description": "123",
-      "image": "/images/1739366602573-964009841.jpg",
-      "date_posted": "2025-02-12",
+      "description": "123123",
+      "image": "/images/1739582990602-670250693.jpg",
+      "date_posted": "2025-02-19",
       "applicationLink": "https://career.indomaretgroup.com/jobs/staff/check-nik",
-      "poster": "/images/1739366602580-560886131.jpg",
-      "id": "m233kWq"
+      "poster": "/images/1739582990647-111298579.jpg",
+      "id": "30RfLdK"
     },
     {
-      "title": "WOMANJI",
-      "company": "SANGZU",
-      "location": "LI SI SAM SANG",
-      "description": "BU JE LAI NA WO NI SENG GO YA",
-      "image": "/images/1739368192347-432654273.jpg",
-      "date_posted": "2025-02-12",
-      "applicationLink": "",
-      "poster": "/images/1739368192379-466718982.png",
-      "id": "l6YBuAe"
-    },
-    {
-      "title": "Jasa pembersih anus",
-      "company": "PT. DUBUR",
-      "location": "gondang",
-      "description": "Membutuhkan 5 Karyawan yang bisa membersihkan dubur",
-      "image": "/images/1739415771155-904508137.jpg",
-      "date_posted": "2025-02-13",
-      "applicationLink": "https://www.pens.ac.id/sarjanaterapan-teknik-telekomunikasi/",
-      "poster": "/images/1739415771171-204690157.jpg",
-      "id": "mmBrJHu"
-    },
-    {
-      "title": "123",
-      "company": "123",
-      "location": "123",
-      "description": "123",
-      "date_posted": "2025-02-13",
-      "applicationLink": "https://career.indomaretgroup.com/jobs/staff/check-nik",
-      "image": "/images/1739417988754-360107012.jpg",
-      "poster": "/images/1739417988802-316508558.jpg",
-      "id": "wY308-7"
-    },
-    {
-      "title": "324",
-      "company": "234",
-      "location": "234",
-      "description": "234234234",
-      "date_posted": "2025-02-13",
-      "applicationLink": "https://google.com",
-      "image": "/images/1739420926157-981673329.jpg",
-      "poster": "/images/1739420926201-465832453.jpg",
-      "id": "JLBu8ni"
+      "title": "Operator Produksi, House Keeping, Electrician ",
+      "company": "PT. Kayu Mebel Indonesia Group",
+      "location": "Pelaksanaan Tes :  Hari        : Senin, 24 Pebruari 2025 Waktu    : 07.30 WIB - Selesai Tempat  : Aula SMK SORE Tulungagung",
+      "description": "Pendaftaran ditutup Tgl. 22 Februari 2025\nPT. Kayu Mebel Indonesia Group merupakan perusahaan yang bergerak dibidang Furniture Industry, berorientasi kualitas terbaik pada product dan didukung dengan penggunaan teknologi canggih. PT. Kayu Mebel Indonesia pusat bertempat di Sidoarjo dan memiliki cabang di Sidoarjo, Semarang, dan Project Perhotelan di Bali.\n\nSAAT INI MEMBUTUHKAN KARYAWAN DI BIDANG\n1. Operator Produksi\n2. House Keeping \n3. Electrician \n\nPelaksanaan Tes :\n\nHari        : Senin, 24 Pebruari 2025\nWaktu    : 07.30 WIB - Selesai\nTempat  : Aula SMK SORE Tulungagung\n\nSyarat :\n\nKelas XII atau Alumni\nSEMUA JURUSAN\n\nBersedia ditempatkan di Sidoarjo, Semarang dan Bali.\n\nLink Pendaftaran:\nhttps://forms.gle/U4BBRTFcbW8ADeWi7\n\nPendaftaran ditutup Tgl. 22 Februari 2025\n\nKepala Bidang BKK,\nSMK Sore Tulungagung,\n\n\n\nFERIAWAN, S.Pd., M.T., Gr.\nNIY. 992004179G",
+      "image": "/images/1739672336778-358063513.jpeg",
+      "date_posted": "2025-02-16",
+      "applicationLink": "https://forms.gle/U4BBRTFcbW8ADeWi7",
+      "poster": "/images/1739672336829-624580553.jpeg",
+      "id": "sdW09QH"
     }
   ],
   "subscribers": [
