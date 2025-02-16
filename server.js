@@ -157,6 +157,19 @@ server.use((req, res, next) => {
   next();
 });
 
+const ADMIN_USERNAME = "admin";
+const ADMIN_PASSWORD = "akuadminsigma123";
+
+app.post("/api/login", (req, res) => {
+  const { username, password } = req.body;
+
+  if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+    res.json({ success: true, token: "random_generated_token" });
+  } else {
+    res.status(401).json({ success: false, message: "Username atau password salah!" });
+  }
+});
+
 server.use(router);
 
 const port = 5000;
