@@ -14,9 +14,9 @@ const middlewares = jsonServer.defaults({
 });
 
 // Environment variables
-const SECRET_KEY = process.env.JWT_SECRET || "your_jwt_secret";
+const SECRET_KEY = process.env.JWT_SECRET || "Kelompok_Satu_Jaya";
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "password";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "keamananYangUtama_0129";
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
 
